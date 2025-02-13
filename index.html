@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormulationCopilot™️</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <!-- Open Graph meta tags for social media previews -->
+    <meta property="og:title" content="FormulationCopilot™️">
+    <meta property="og:description" content="Coming soon.">
+    <meta property="og:image" content="preview-image.jpg">
+    <meta property="og:url" content="www.formulationcopilot.com">
+    <meta property="og:type" content="website">
+    <style>
+        /* Define the custom font face for Black */
+        @font-face {
+            font-family: 'Neue Haas Grotesk Display Pro Black';
+            src: url('fonts/NeueHaasGroteskDisplayBlack.woff2') format('woff2'),
+            url('fonts/NeueHaasGroteskDisplayBlack.woff') format('woff'),
+            url('NeueHaasDisplayBlack.ttf') format('truetype');
+            font-weight: 900;
+            font-style: normal;
+        }
+        /* Define the custom font face for Roman */
+        @font-face {
+            font-family: 'Neue Haas Grotesk Display Pro Roman';
+            src: url('fonts/NeueHaasGroteskDisplayRoman.woff2') format('woff2'),
+            url('fonts/NeueHaasGroteskDisplayRoman.woff') format('woff'),
+            url('NeueHaasDisplayRoman.ttf') format('truetype');
+            font-weight: 300; /* This should be the font weight specified in your design */
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #fff; /* Optional background color */
+            overflow: hidden; /* Prevent scrolling */
+            min-height: 100vh;
+            align-items: center; /* position the container at the middle of the viewport*/
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 80vw; /* Adjust the overall width of content */
+            max-width: 847px;
+            padding: 20px;
+            height: auto;
+            margin: 0; /* Remove the margin */
+            transform: translateY(-50%); /* position the container so the bottom is in the vertical center */
+        }
+
+        .title-container { /* Container for the title and emojis */
+            position: relative; /* For absolute positioning of the emojis */
+            width: 100%; /* To take up the full width of container */
+            display: flex;
+            flex-direction: column; /* Align the title and the emojis in column */
+            align-items: center; /* To horizontally center the title */
+            margin-bottom: 1em;
+        }
+        .title {
+            color: #000;
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: 'Neue Haas Grotesk Display Pro Black';
+            font-size: calc(max(4vw, 2rem));
+            font-style: normal;
+            font-weight: 900;
+            line-height: 1.2em;
+            text-align: center; /* Center the title text */
+            margin-bottom: 0;
+            position:relative;/* Allow position absolute for the emojis */
+        }
+
+
+        .emojis {
+            color: #000;
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: 'Neue Haas Grotesk Display Pro Black';
+            font-size: calc(max(3vw, 1.5rem));
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.2em;
+            position: absolute; /* Use absolute positioning for right alignment */
+            right: 0;/* Aligns to the right of the text */
+            top: 100%; /* position under the title*/
+            white-space: nowrap; /* keep emojis on one line */
+
+        }
+
+
+
+        .coming-soon {
+            color: #000;
+            text-align: center;
+            font-feature-settings: 'liga' off, 'clig' off;
+            font-family: 'Neue Haas Grotesk Display Pro Roman';
+            font-size: calc(max(1.5vw, 0.8rem));
+            font-style: normal;
+            font-weight: 300; /* less bold*/
+            line-height: 1.3em;
+            margin-top: 1em;/* add a margin top for the coming soon text */
+        }
+
+        /* Media query for mobile screens */
+        @media (max-width: 768px) {
+            .container {
+                width: 100vw;
+                max-width: none;
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .title-container {
+                max-width: 320px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="title-container">
+        <h1 class="title"><span>FormulationCopilot™</span>
+         <div class="emojis">😎🪄</div>
+        </h1>
+     </div>
+         <h2 class="coming-soon">Coming soon.</h2>
+    </div>
+</body>
+</html>
